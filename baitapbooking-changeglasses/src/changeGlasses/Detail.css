@@ -1,0 +1,23 @@
+.Detail{
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Detail img{
+    width: 200px;
+}
+
+.Text{
+    position: absolute;
+    top: 73%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25%;
+    background: rgba(210, 105, 30, 0.397);
+    font-weight: bolder;
+}
+.Text h3{
+    color: yellow;
+}

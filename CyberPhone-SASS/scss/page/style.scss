@@ -1,0 +1,144 @@
+@import "../helpers/variables";
+@import "../base/reset";
+@import "../helpers/function";
+@import "../helpers/mixins";
+@import "../conponents/header";
+
+//todo những Mixin có thể tạo
+//todo TEXT, BUTTON, INPUT, TABLE,....
+
+//! tất cả container sẽ có sẵn 3 cái này
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 $sp-4;
+}
+
+.carousel {
+  background-image: url(../image/product-header-bg.jpg);
+  background-size: center;
+  background-repeat: no-repeat;
+  background-position: center bottom; // x- y
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50rem;
+
+    .content {
+      .title {
+        font-size: $text-2xl;
+        font-weight: $font-semibold;
+        color: c("c3-400");
+      }
+      .subtitle {
+        font-size: $text-md;
+        margin-bottom: $sp-4;
+      }
+      .description {
+        font-size: $text-sm;
+        color: c("c0");
+        margin-bottom: $sp-6;
+      }
+      .btn-info {
+        @include Button(
+          2px solid c("c3-400"),
+          5px,
+          $sp-2 $sp-6,
+          transparent,
+          c("c3-400"),
+          0 1px 5px c("c5-200"),
+          c("c3-400"),
+          c("c1")
+        );
+      }
+      .btn-shop {
+        @include Button(
+          2px solid c("c3-400"),
+          5px,
+          $sp-2 $sp-8,
+          c("c3-400"),
+          c("c1"),
+          0 1px 5px c("c5-200"),
+          transparent,
+          c("c3-400")
+        );
+
+        margin-left: $sp-2;
+      }
+    }
+
+    > img {
+      width: 40%;
+    }
+  }
+}
+
+.products {
+  background-color: c("c1-100");
+  .container {
+    > h1 {
+      text-align: center;
+    }
+    @media screen and (max-width: 1200px) {
+    }
+    @media screen and (max-width: 992px) {
+    }
+    @media screen and (max-width: 768px) {
+    }
+    @media screen and (max-width: 577px) {
+    }
+  }
+  .list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: $sp-7;
+    .item {
+      img {
+        width: calc(100%);
+        box-shadow: 3px 0px 20px c("c5-100");
+      }
+      box-shadow: 6px 6px 12px c("c1-400"), -6px -6px 12px c("c1");
+      padding: $sp-6;
+      animation: fadeInTop 0.3s linear 0s;
+      transform: translateY(-100%);
+      opacity: 0;
+      //! hiệu ứng chạy xong stick ở 100% luôn
+      animation-fill-mode: both;
+
+      .rating {
+        i {
+          color: c("c4");
+        }
+        display: flex;
+        justify-content: space-between;
+        font-size: $text-md;
+        button {
+          padding: $sp-4;
+        }
+      }
+      .name {
+        display: flex;
+        justify-content: space-between;
+        font-size: $text-md;
+      }
+    }
+    @for $i from 1 to 6{
+      .item-#{$i}{
+        animation-delay: 0.2s * $i;
+      }
+    }
+  }
+}
+
+
+@keyframes fadeInTop {
+  0% {
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

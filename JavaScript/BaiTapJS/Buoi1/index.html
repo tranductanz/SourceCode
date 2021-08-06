@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Bai Tap JS buổi 1</title>
+</head>
+<body>
+     <h1>Bài tập JS buổi 1</h1>
+     <h1>1) Tính tiền lương nhân viên</h1>
+     <p>Biết lương 1 ngày 100k</p>
+     <p>Số ngày làm</p>
+     <input id="workedDay" type="text">
+     <span>Ngày</span>
+     <button onclick="calcSalary()">Tính lương</button>
+     <p>Lương nhân viên là
+          <span id="totalSalary">....</span>
+     </p>
+
+
+
+     <h1>2) Tính giá trị trung bình</h1>
+     <p>Nhập vào 5 số thực</p>
+     <p>Số đầu tiên</p><input id="num1" type="text">
+     <p>Số 2</p><input id="num2" type="text">
+     <p>Số 3</p><input id="num3" type="text">
+     <p>Số 4</p><input id="num4" type="text">
+     <p>Số 5</p><input id="num5" type="text">
+     <button onclick="calcAverage()">Tính trung bình</button>
+     <p>Số trung bình của 5 số trên là
+          <span id="average">....</span>
+     </p>
+
+
+
+     <h1>3) Quy đổi tiền</h1>
+     <p>Giá USD 23.500 đồng</p>
+     <p><input id="usd" type="text"> <b>USD</b> sẽ được <input type="text" id="vnd"> <b>Việt Nam Đồng</b></p>
+     <button onclick="changeCurrency()">Quy đổi</button>
+
+
+     <h1>4) Tính diện tích, chu vi hình chữ nhật</h1>
+     <p>Chiều dài</p><input id="length" type="text">
+     <p>Chiều rộng</p><input id="width" type="text">
+     <button onclick="calcRectangle()">Tính</button>
+     <p>Diện tích HCN là
+          <span id="acreAge">.... </span> <span>m2</span>
+     </p>
+
+     <p>Chu vi HCN là
+          <span id="periMeter">....</span> <span>m</span>
+     </p>
+     <script src="./js/index.js"></script>
+
+
+
+     <h1>5) Tính tổng 2 ký số</h1>
+     <p>Số</p>
+     <input type="text" id="num">
+     <button onclick="calcSumEachNumber()">Tính tổng từng số cộng lại</button>
+     <p>Tổng sẽ là
+          <span id="sumNum">....</span>
+     </p>
+</body>
+</html>

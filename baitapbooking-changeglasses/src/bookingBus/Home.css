@@ -1,0 +1,18 @@
+.RedSquare {
+    background-color: red;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+}
+.GreenSquare {
+    background-color: red;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+}
+.GreySquare {
+    background-color: rgba(128, 128, 128, 0.486);
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+}

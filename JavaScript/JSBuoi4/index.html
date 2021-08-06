@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>JS Buoi 4</title>
+</head>
+<body>
+     
+     <span id="spanTag" style="color: red;">trantanz</span>
+     <button onclick="getContentOfSpan()">In nội dung của span</button>
+     <button onclick="changeContentOfSpan()">Đổi nội dung Span</button>
+     <button onclick="changeStyleOfSpan()">Đổi định dạng span</button>
+     
+     
+     
+          <h1>Đăng nhập</h1>
+          <p>Tài khoản</p>
+          <input id="txtUsername" type="text" placeholder="Username">
+          <p >Mật khẩu</p>
+          <input id="txtPassword" type="text">
+          <button onclick="getInfomation()">Submit</button>
+          <p style="display: none;" id="welcome">Đăng nhập thành công</p>
+          <p id="username" style="display: none;">Tài khoản</p>
+          <p id="password" style="display: none;">Mật Khẩu</p>
+
+
+
+
+          <h1>Tính tiền tip</h1>
+          <p>Tổng tiền thanh toán</p>
+          <div>
+               <span>$</span>
+               <input id="totalCost" type="text" placeholder="Tổng tiền">
+          </div>
+          
+          <div>
+               <select id="tipSelection">
+                    <option>----Chọn để tips-----</option>
+                    <option value="0.3">30%</option>
+                    <option value="0.2">20%</option>
+                    <option value="0.1">10%</option>
+                    <option value="0.05">5%</option>
+               </select>
+          </div>
+          <p>Muốn share bao nhiêu người?</p>
+          <input id="people" type="text" placeholder="Nhập số người"> 
+          <span>người</span>
+          <br>
+          <button onclick="calcPayForMeal()">Tính nào</button>
+          <p>Tiền tip của 1 người là : 
+               <span id="tipResult">....</span>
+          </p>
+          
+
+
+
+
+
+
+
+
+
+     <script src="./js/index.js"></script>
+
+
+</body>
+</html>

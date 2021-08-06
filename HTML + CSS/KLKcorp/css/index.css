@@ -1,0 +1,237 @@
+/*! code global CSS */
+/* goi tat ca the HTML */
+*{
+    box-sizing: border-box; /* chi tac dung voi padding */
+}
+
+/*XÓA HIỆU ỨNG*/
+.clear{
+    clear:both;
+}
+
+/* INTRODUCE */
+.intro {
+    font-size: 30px;
+    text-align: justify;
+}
+
+
+
+.KLK{
+    color: red;
+}
+/* B1: Xoa dau cua danh sach */
+.header ul{
+    padding: 20px;
+    list-style: none;
+    background-color: black;
+}
+
+.header a{
+    color: white;
+    text-decoration: none;
+}
+
+.header li{
+    display: inline;
+
+    /* !Box Model: */
+    /* Cac the HTML se duoc the hien thanh cac khoi vuong de de dang phan biet cac vung noi dung cua the */
+
+    /*! Tu the voi the */
+    margin: 10px;
+    /*! Khoang cach vien */
+    /* padding: 15px; 
+    border: 10px solid red; */
+}
+
+/* Cach ghi Margin va Padding
+margin : 10px;
+margin : 10px 20px ( top - bot, right -left)
+margin : 10px 15px 20px; (top, right-left, bot)
+margin : 10px 15px 20px 25px; (top, right, bot, left)   
+*/
+
+/* CAROUSEL */
+.carousel {
+    background-image: url(/KLKcorp/img/slider_1.jpg);
+    height: 700px;
+    background-repeat: no-repeat; /* Lap hinh */
+    background-size: cover; /* Keo gian hinh */
+    background-position: center; /* vi tri hinh */
+
+}
+/* LAYOUT DEMO PRODUCTS */
+.layout-item{
+    display: block;
+    width: 72%;
+    margin: auto;
+}
+.layout-item-left{
+    float: left;
+    width: 50%;
+}
+.layout-item-right{
+    float: left;
+    width: 50%;
+}
+.layout-item-1{
+    float: left;
+    width: 50%;
+}
+.layout-item-2{
+    float: left;
+    width: 100%;
+}
+
+
+
+
+
+/* PRODUCTS */
+
+/*! float : goi truc tiep the can chinh tren 1 hang */
+/*! xet kich thuoc cho cac the */
+.products__item{
+    float: left;
+    width: 25%; /* 4 san pham la 25% */
+
+    padding: 0 25px;
+}
+
+.products__content{
+    padding-bottom: 80px;
+}
+
+.products__content button {
+    font-size: 18px;
+    height: 50px;
+    width: 100px;
+    border-radius: 10%;
+    background-color: red;
+    color: white;
+    font-weight: bolder;
+}
+.products h2:nth-of-type(1){
+    font-size: 35px;
+    text-align: center;
+}
+.products__item h3 {
+    font-size: 35px;
+    margin-bottom: 1px;
+    margin-top: 10px;
+}
+
+.products__item p {
+    font-size: 20px;
+    text-align: justify;
+    margin-top : 5px;
+    margin-bottom: 30px;
+
+
+}
+/*BANNERS*/
+.banner{
+    background-image: url("/KLKcorp/img/nature.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    /*! gan relatives cho the cha */
+    position: relative;
+}
+/*! GOI THEO THU TU THE */
+.banner__circle p:first-child{
+    font-size: 18px;
+    font-weight: bolder;
+}
+/*! nth-child  kiem tra thu tu the truoc roi moi kiem tra loai the*/
+.banner__circle p:nth-child(2){
+    font-size: 60px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.banner__circle p:nth-of-type(4){
+    margin-top: 5px;
+    font-weight: bold;
+}
+.banner__circle p{
+    line-height: 10px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+
+}
+.banner__circle{
+    /*! khai bao relatives cho the con  */
+    position: absolute;
+    /* TOP, RIGHT, BOTTOM, LEFT */
+    top: 25px;
+    left: 350px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+
+    /* background-color: red; */
+    /* rgba */
+    background-color: rgba(255, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+}
+
+/* SERVICES */
+.services__item {
+    float: left;
+    width:33%;
+    text-align: center;
+    /* padding-left: 20px;
+    padding-right: 30px; */
+    padding-top: 50px;
+}
+.services{
+    margin : 20px auto;
+    width: 60%;
+}
+.services__item p:nth-of-type(1){
+    font-size: 25px;
+    font-weight: bolder;
+}
+.services__item p:nth-of-type(2){
+    margin-left : 50px;
+    margin-right: 50px;
+    text-align: unset;
+}
+
+
+
+
+/* .banner__circle p:last-child{
+
+} */
+
+/*! :nth-of-type() kiem tra loai the roi moi xet thu tu the */
+/* .banner__circle p:nth-of-type(2) */
+/* <h1></h1>
+    <p></p> 
+    <p></p> DAY LA CAI DUOC CHON
+    <p></p>
+*/
+
+.footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    height: 150px;
+}
+
+.footer__item{
+   line-height: 5px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+}
+
+.footer__item p:nth-of-type(1){
+    font-size: 25px;
+    font-weight: bolder;
+    filter: brightness(300%);
+}

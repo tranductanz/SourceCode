@@ -1,0 +1,110 @@
+/* HEADER */
+.logo img{
+    width: 100px;
+    height: 100px;
+}
+
+/* MENU */
+.menu h1 {
+    background-color: red;
+    color: white;
+}
+.menu div{
+    font-size: 20px;
+}
+
+/* INTRO */
+
+.intro {
+    background-color: rgb(143, 5, 5);
+    color: white;
+    font-size: 30px;
+}
+.intro span{
+    color: black;
+}
+
+.intro img{
+    height: 700px;
+    width: 900px;
+}
+
+/* TIMELINE */
+.timeline{
+    background-color: rgb(143, 5, 5);
+    color: white;
+}
+.timeline p{
+    font-size: 51px;
+    text-align: center;
+}
+.timeline li{
+    font-size: 30px;
+}
+.timeline img{
+    height: 700px;
+    width: 900px;
+}
+
+/* PRODUCTS PRICE */
+.products td{
+    font-size: 20px;
+    height: 50px;
+}
+.products th{
+    font-weight: bolder;
+    font-size: 30px;
+    height: 80px;
+}
+
+.products__name{
+    width: 300px;
+    height: 300px;
+}
+
+.products{
+    margin-left: 480px;
+    width: 100%;
+}
+
+
+.menudrinks{
+    font-size: 35px;
+    font-weight: bolder;
+    margin-left: 230px;
+}
+
+.greentea{
+    background-image: url(/KFC/img/greentea.jpg);
+    text-align: right;
+
+}
+
+.blacktea{
+    background-image: url(/KFC/img/blacktea.jpg);
+    text-align: center;
+
+}
+
+.cold{
+    text-align: right;
+}
+
+.money{
+    text-align: center;
+}
+.olongtea{
+    background-image: url(/KFC/img/olongtea.jpg);
+}
+
+.fruittea{
+    background-image: url(/KFC/img/fruit.jpg);
+}
+.coldonly{
+    text-align: center;
+}
+
+.milktea{
+    background-image: url(/KFC/img/milktea.png);
+
+}

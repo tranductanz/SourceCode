@@ -1,0 +1,35 @@
+.header {
+     position: relative;
+     .imageheader{
+          position: absolute;
+          top: -180px;
+          left: 0;
+          
+     }
+     .container{
+          h1{
+               font-size: $text-sm;
+          }
+          .collapse{
+               .tel{
+                    background-color: c("c1");
+                    border-radius: $text-3xl;
+               }
+               a{
+                    font-size: $text-base;
+                    font-weight: $font-bold;
+               }
+               .navbar-nav{
+                    .nav-item{
+                         .tel{
+                              @media screen and (max-width: 1200px){
+                                   font-size: 15px;
+                              }
+                         }
+                    }
+               }
+          }
+          
+     }
+}
+

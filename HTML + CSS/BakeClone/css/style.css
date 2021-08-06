@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* HEADER */
+header{
+    background-color: #4e2a84;
+    padding: 20px 0;
+}
+.header__content li{
+    display: inline;
+}
+
+.header__content a {
+    text-decoration: none;
+    color: white;
+}
+.header__content ul {
+    list-style: none;
+}
+.header__content{
+    /* công thức chia web */
+    width: 60%;
+    margin: auto;
+    /* nav và p tự gộp */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    word-spacing: 30px;
+    
+}
+
+.header__content p {
+    font-size: 37px;
+    color: white;
+}
+
+
+/* CAROUSEL */
+.carousel{
+    background-image: url(../img/b3.jpg);
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carousel__content h1 {
+    font-size: 30px;
+}
+.carousel__content button{
+    cursor: pointer;
+    padding: 13px 32px;
+    background-color: #ff0e83;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+.carousel__content button:hover{
+    color: black;
+    background-color: white;
+    border-color: #ff0e83;
+}
+
+
+/* intro */
+.intro img {
+    display: block;
+    width: 100%;
+}
+.intro__item{
+    display: flex;
+    align-items: center;
+}
+.intro {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+}
+
+.intro__ab1{
+    grid-column: 2 / span 2;
+}
+
+.intro__best{
+    grid-column: 1 / span 2;
+}
+
+.intro_ab4{
+    grid-column: 3 / span 2;
+}
+.intro__text{
+    text-align: center;
+    padding: 0 50px;
+}
+
+/* NUMBERS */
+.number{
+    padding: 70px 0;
+}
+
+.number__content{
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.number__item p:nth-of-type(1){
+    font-size: 32px;
+    color: #4e2a84;
+    font-weight: bolder;
+}
+
+.number__item p:nth-of-type(2){
+    font-size: 23px;
+    font-weight: bolder;
+}

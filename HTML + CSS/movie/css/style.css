@@ -1,0 +1,189 @@
+
+
+/*todo HEADER */
+
+
+.header{
+    /*! rút header khỏi giao diện lúc này header nằm dưới carosel */
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*! lấy header trở lại */
+    z-index: 10;
+    width: 100%;
+}
+
+.header .navbar-nav{
+    border-bottom: 1px solid rgba(255, 255, 255 , 0.3);
+}
+
+.header .navbar-nav .nav-item::after{
+    content: " ";
+    /*? Đổi block mới xài đc width height */
+    display: block;
+    width: 0;
+    height: 3px;
+    background-image: linear-gradient(to right,#fbbd61,#ec7532);
+    box-shadow: 0 0 20px 0 #fbbd61;
+    transition: all 0.3s linear;
+}
+
+/*? Gọi hiệu ứng */
+.header .navbar-nav .nav-item:hover::after{
+    width: 100%;
+}
+
+/*todo SLIDER */
+
+.slider .carousel-item::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #000000, transparent);
+}
+
+.slider .carousel-caption .border{
+    width: 3.2rem;
+    height: 3.2rem;
+    line-height: 3rem;
+    /*! Nâng độ ưu tiên cao nhất */
+    border-width: 0.125rem !important;
+}
+
+.slider .carousel-caption button{
+    height: 3rem;
+    padding: 0 2rem;
+    background-image: linear-gradient(to right,#fbbd61,#ec7532);
+    border-radius: 300px;
+    border: none;
+    color: #ffffff;
+    letter-spacing: 0.125rem;
+    margin-left: 0.5rem;
+}
+
+.slider .carousel-caption{
+    /*! Do bootstrap có sẵn */
+    bottom: initial;
+    right: initial;
+    /*! căn giữa kết hợp position và transform */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slider .carousel-indicators li{
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    border: 0.125rem solid #ffffff;
+    background-color: transparent;
+    opacity: 1;
+}
+
+.slider .carousel-indicators .active{
+    background: white;
+}
+
+
+/*todo Làm 3 nut slider đẹp hơn */
+.slider .carousel-indicators{
+    justify-content: flex-start;
+    margin: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/*? MOVIE */
+
+
+.movie__item__poster__content{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s linear;
+}
+
+.movie__item__poster:hover .movie__item__poster__content{
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.movie__item__poster__content i{
+    width: 5rem;
+    height: 5rem;
+    line-height: 4.8rem;
+    
+}
+
+.movie__item__poster::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -6.25rem;
+    background-image: linear-gradient(to bottom,#fbbd61,#ec7532);
+    width: 0%;
+    height: 100%;
+    /*! tạo hình bình hành */
+    transform: skewX(20deg);
+    transition:  all 0.3s linear;
+    
+}
+
+.movie__item__poster:hover::before{
+    width: 200%;
+    opacity: 0.8;
+    
+    
+}
+
+
+/* SCHEDULE */
+.schedule .nav-tabs .nav-item .nav-link{
+    color: #4a4a4a;
+    font-size: 0.75rem;
+    padding: .7rem  1.3rem;
+}
+
+
+.schedule .nav-tabs .nav-item.show .nav-link, 
+.schedule .nav-tabs .nav-link.active{
+    border-color: transparent;
+    border-bottom-color: #dee2e6;
+    color: #ec7532;
+}
+
+.schedule .nav-tabs .nav-item .nav-link{
+    position: relative;
+}
+.schedule .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{
+    border: transparent;
+    border-bottom-color: #dee2e6;
+}
+
+.schedule .nav-tabs .nav-item .nav-link::after{
+    content: " ";
+    /*? Đổi block mới xài đc width height */
+    display: block;
+    width: 0;
+    height: 3px;
+    background-image: linear-gradient(to right,#fbbd61,#ec7532);
+    box-shadow: 0 0 20px 0 #fbbd61;
+    transition: all 0.3s linear;
+    /*! rút after ra khỏi li */
+    /*! vì chiều cao của after ảnh hưởng đến giao diện */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.schedule .nav-tabs .nav-item:hover .nav-link::after,
+.schedule .nav-tabs .nav-item .nav-link.active::after{
+    width: 100%;
+}

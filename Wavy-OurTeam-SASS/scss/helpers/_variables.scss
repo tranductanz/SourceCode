@@ -1,0 +1,47 @@
+//color-array
+//! có dự án tạo biến lưu trữ
+//! có dự án tạo mảng lưu trữ
+$colors: (
+  "c1" : #B21A80,
+  "c1-200" : #AA017E,
+  "c2" : #ffffff,
+  "c3" : #000000,
+  "c3-100" : #00000050,
+);
+
+//font-size
+$text-xs: 0.75rem; //12px
+$text-sm: 0.875rem; //14px
+$text-base: 1rem; //16px
+$text-md: 1.5rem;
+$text-lg: 2rem;
+$text-xl: 3rem;
+$text-2xl: 4rem;
+$text-3xl: 5rem;
+
+//font-weight
+$font-light: 300;
+$font-regular: 400;
+$font-semibold: 600;
+$font-bold: 700;
+
+//jusify
+//spacing
+$sp-1: 0.25rem;
+$sp-2: 0.5rem;
+$sp-3: 0.75rem;
+$sp-4: 1rem;
+$sp-5: 1.25rem;
+$sp-6: 1.5rem;
+$sp-7: 1.75rem;
+$sp-8: 2rem;
+$sp-9: 2.25rem;
+$sp-10: 2.5rem;
+//! 4 số = 1 rem;
+$sp-12: 3rem;
+$sp-14: 3.2rem;
+$sp-16: 4rem;
+$sp-20: 5rem;
+$sp-24: 6rem;
+$sp-28: 7rem;
+$sp-32: 8rem;

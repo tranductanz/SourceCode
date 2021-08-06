@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Bài tập JS Buổi 3</title>
+</head>
+<body>
+
+     <h1>Bài tập tính đậu hay rớt</h1>
+<input id="sub1" type="text" placeholder="Sub1">
+    <input id="sub2" type="text" placeholder="Sub2">
+    <input id="sub3" type="text" placeholder="Sub3">
+    <input id="area" type="text" placeholder="Area">
+    <input id="type" type="text" placeholder="Type">
+    <input id="standard" type="text" placeholder="Standard Grade">
+    <button onclick="main()">Check</button>
+
+    <p>Bạn đã
+         <span style="color: red;" id="resultExam">...</span>
+    </p>
+
+
+
+    <h1>Bài tập tính tiền điện</h1>
+    <p>Số điện đã tiêu thụ</p>
+    <input type="text" name="" id="usedElectric"> <span>kW</span>
+    <button onclick="calcElectricityBill()">Tính</button>
+    <p>Đã tiêu thụ
+         <span id="usedResult">...</span>
+    </p>
+    <script src="./js/index.js"></script>
+
+
+
+    <h1>Tính thuế thu nhập cá nhân</h1>
+    <p>Tổng thu nhập năm của bạn</p>
+    <input id="yearIncome" type="text"> <span>Triệu</span>
+    <p>Số người phụ thuộc</p>
+    <input id="person" type="text"> <span>Người</span>
+    <button onclick="calcPersonalTax()">Tính thôi</button>
+    <p>Tổng thu nhập chịu thuế của bạn là
+         <span id="taxIncome">....</span> <span>Triệu</span>
+    </p>
+    <p>Vậy, thuế thu nhập cá nhân của bạn là
+         <span id="totalTax">....</span> <span>Triệu</span>
+    </p>
+
+
+
+
+    <h1>Tính tiền cáp</h1>
+    <p>Bạn là ?</p>
+    <ul style="list-style: none;">
+     <li onchange="personal()" class="type">
+       <input type="radio" id="personal" name="selector">
+       <label for="personal">Cá nhân</label>
+       
+       <div class="check"></div>
+     </li>
+     
+     <li onchange="myFunction()" class="type">
+       <input type="radio" id="corp" name="selector">
+       <label for="corp">Doanh nghiệp</label>
+       <div class="check"></div>
+     </li>
+   </ul>
+
+   <p>Bạn cần thuê bao nhiêu kênh cao cấp ?</p>
+   <input id="channelPremium" type="text" placeholder="kết nối">
+   <p id="channel"></p>
+   <input type="text" id="forCorp" style="display: none;">
+   <button onclick="calcBill()">Tính tiền</button>
+   <p>Tổng số tiền bạn cần phải trả sẽ là :
+        <span id="totalPay">....</span>
+   </p>
+</body>
+</html>
+

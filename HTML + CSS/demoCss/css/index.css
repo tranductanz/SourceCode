@@ -1,0 +1,18 @@
+/* Tag name ( ten the) */
+h1{
+    font-size: 50px;
+    background-color: red;
+}
+
+/*! Goi Class thi co dau "." */
+.heading1{
+    background-color: yellow;
+}
+
+/*! goi ID thi co dau "#" */
+
+#title1{
+    color: red;
+}
+
+/*! ID > Class > Tag */

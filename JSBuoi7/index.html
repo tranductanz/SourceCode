@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Js buổi 7</title>
+</head>
+<body>
+     <p>Nhập vào 1 số nguyên</p>
+     <input id="txtNum" type="text" placeholder="Nhập số nguyên">
+     <button onclick="addNum();">Thêm vào mảng</button>
+     <button onclick="sumOfEvent();">Tính tổng các số chẵn có trong mảng</button>
+     <button onclick="countNegativeNum();">Đếm số âm trong mảng</button>
+     <button onclick="sumNegativeNum();">Tính tổng các số âm</button>
+     <hr>
+
+     <h1>Bài 2</h1>
+     <!-- 2, 1, 3.5, 6, 4 , 4.5, 7.9, 9.2, 9.8, 5, 9.8 -->
+     <input value="2,1,3,5,4,7,9, 2.2" id="txtGrades" type="text" placeholder="Nhập danh sách điểm">
+     <button onclick="addGrades();">Thêm vào mảng</button>
+     <button onclick="calcAverage();">Tính điểm trung bình</button>
+     <button onclick="highestNum();">Tìm điểm lớn nhất và nhì trong mảng</button>
+     <button onclick="lowestNum();">Tìm điểm thấp nhất trong mảng</button>
+     <button onclick="countGreatStudent();">Đếm có bao nhiêu sinh viên giỏi (điểm > 8)</button>
+     <button onclick="checkSum();">Kiểm tra xem có 2 con điểm bất kì
+           trong array cộng lại với nhau bằng 10</button>
+     <button onclick="swapGrade(0, 8);">Đổi chỗ 2 số bất kì trong mảng</button>
+     <button onclick="sortBubble();">Sắp xếp mảng điểm tăng dần</button>
+     <button onclick="reverseGradeList();">Đảo ngược mảng điểm</button>
+     <button onclick="filterGrade();">Lọc ra một mảng mới chỉ chưa điểm > 5</button>
+     <button onclick="findGrade();">Tìm vị trí của điểm 9 đầu tiên trong mảng</button>
+     
+     
+     <h1 id="title">Demo DOM</h1>
+     <span class="content">content</span>
+     <span class="content">content</span>
+     <script src="./js/index.js"></script>
+</body>
+</html>

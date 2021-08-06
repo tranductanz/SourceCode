@@ -1,0 +1,30 @@
+.introKFC{
+    text-align: center;
+    color: rgb(143, 5, 5);
+    font-size: 45px;
+    font-weight: bolder;
+    filter: brightness(100%);
+}
+
+.kfcpromote{
+    width: 60%;
+    background-color: white;
+    font-size: 22px;
+}
+
+.body{
+    background-color: grey;
+}
+
+.kfcpromote img {
+    background-size: cover;
+    width: 100%;
+}
+
+.button{
+    font-size: 24px;
+    color: red;
+    border-radius: 50px;
+    
+}
+

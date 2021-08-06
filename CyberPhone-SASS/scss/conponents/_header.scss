@@ -1,0 +1,33 @@
+.header {
+     //! sử dụng map-get để lấy từ MẢNG
+     background-color: c("c1-200");
+     box-shadow: 0 1px 5px map-get($map: $colors, $key: "$c5-200");
+     z-index: 10;
+     position: relative;
+     .container {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       height: 50px;
+   
+       > a {
+         font-size: $text-lg;
+         color: map-get($map: $colors, $key: "$c3-400");
+         text-decoration: none;
+         font-weight: $font-semibold;
+       }
+   
+       .nav a {
+         font-size: $text-base;
+         padding: 0 $sp-2;
+         cursor: pointer;
+         text-decoration: none;
+         color: c("c5");
+         //! parent selector
+         //dấu & đại diện cho thằng cha
+         &:hover {
+           color: map-get($map: $colors, $key: "$c3-400");
+         }
+       }
+     }
+   }

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bai Tap JS -- 2</title>
+</head>
+<body>
+<h2>Từ những bài làm JS này, sẽ không note input output và process.</h2>
+<h1>Bài 1</h1>
+<button onclick="printOnetoOneHundred();">In 1 bảng 1-100</button>
+
+<h1>Bài 2</h1>
+<input id="addNum" type="text" placeholder="Mảng số nguyên" value="5,8,6,2,9,1,3,4">
+<button onclick="addNumArr();">Thêm vào mảng</button>
+<button onclick="findPrimeNum();">Tìm số nguyên tố có trong mảng</button>
+<button onclick="sortBubbleNum();">Sắp xếp mảng ( làm thêm cho vui )</button>
+
+<button onclick="findSum();">Tìm 2 số trong mảng + lại = 10 ( làm thêm cho vui )</button>
+<h1>Bài 3</h1>
+<input id="numSum" type="text" placeholder="nhập số nguyên n">
+<button onclick="calcSumNum();">S =(2+3+4+...+n)+ 2n</button>
+   <p>(ví dụ n = 3 --> (2+3 + n=3) + 2n))</p>
+
+<h1>Bài 4</h1>
+<input id="numDivisor" type="text" placeholder="nhập vào n">
+<button onclick="findDivisor();">Ước số của n</button>
+
+<h1>Bài 5</h1>
+<input type="text" id="txtNum" placeholder="Đảo ngược">
+<button onclick="reverseNum();">Đảo ngược mảng</button>
+
+<h1>Bài 6</h1>
+<button onclick="findX();">Tìm số nguyên dương lớn nhất của 1+2+3+...+x <= 100</button>
+
+<h1>Bài 7</h1>
+<input id="numMultiple" type="text" placeholder="bạn muốn cửu chương mấy ?">
+<button onclick="numMultiple();">In bảng cửu chương</button>
+<h1>Bài 8</h1>
+<button onclick="dealCards();">Chia Bài Lẹ Đi</button>
+
+<h1>Bài 9</h1>
+<input id="animals" type="text" placeholder="chó + gà">
+<input id="animalLegs" type="text" placeholder="tổng số chân">
+<button onclick="countDogChicken();">Tính gà và chó của Bác Hiếu nào</button>
+<h1>Bài 10</h1>
+<p>Cách tính này chỉ tính đc đơn giản kim giờ và kim phút. Không tính đc
+độ lệch của kim giờ. Ví dụ 6 giờ 15 thì là 90 độ trong, 270 độ ngoài.
+Nếu đúng phải tính luôn cả lệch kim giờ, nhưng bài toán sẽ phức tạp 
+hơn nhiều => <b>Nên thôi nha bác</b></p>
+
+<p>Bài này tính dựa vào công thức 1 hours = 30 độ
+1 minutes = 6 độ</p>
+<p>Độ Inside là độ trong 2 điểm giờ / phút</p>
+<p>Độ Outside là độ ngoài 2 điểm giờ / phút</p>
+
+
+<input id="hourNum" type="text" placeholder="Số giờ">
+<input id="minuteNum" type="text" placeholder="Số phút">
+<button onclick="calcAngle();">Tính góc lệch</button>
+<script src="./js/index.js"></script>
+</body>
+</html>

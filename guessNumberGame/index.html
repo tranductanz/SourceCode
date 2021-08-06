@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Number</title>
+</head>
+
+<body>
+    <input id="txtNumber" type="text" placeholder="nhập số">
+    <p id="notNullError" style="color: red; display: none;">*Không được để trống</p>
+    <p id="onlyNumberError" style="color: red; display: none;">Số phải từ [1-100], không có chữ</p>
+
+    <button onclick="randomNumber(), addNum();">Đoán</button>
+    <h2>Máy sẽ random từ 1 - 100</h2>
+    <h2>Bạn sẽ nhập vào số và đoán nhé</h2>
+    <h2 style="color: red;">LƯU Ý : Sau mỗi 3 lần, hệ thống sẽ tự động reset lịch sử quay số bạn nhé</h2>
+    <h2 style="color: red;">***Hoặc lần nhập thứ 4 sẽ reset !</h2>
+    <h1 id="txtHigh" style="display: none;">-----Hmm...số lớn hơn số cần tìm</h1>
+    <h1 id="txtLow" style="display: none;">-----Hmm...số bạn đoán hơi nhỏ, đoán lại nào</h1>
+    <h1 id="txtBingo" style="display: none;">*****Trúng rồi !!! Chúc mừng bạn</h1>
+    <div class="guessHistory">
+    </div>
+    <h1>Lịch sử</h1>
+    <div id="history">
+        <p id="firstGuess"></p>
+        <p id="secondGuess"></p>
+        <p id="thirdGuess"></p>
+    </div>
+    <h1 style="color: blue; display: none;" id="txtResult">Đáp án lần này : </h1>
+    <script src="./js/Number.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

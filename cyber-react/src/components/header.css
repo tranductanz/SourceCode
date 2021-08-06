@@ -1,0 +1,9 @@
+.header{
+    background-color: red;
+    color: white;
+}
+
+.header a {
+    color: white;
+    margin: 30px;
+}

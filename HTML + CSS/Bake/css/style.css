@@ -1,0 +1,609 @@
+@font-face {
+    /*? Tên font */
+    font-family: openSans-Normal ;
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    /*? Tên font */
+    font-family: openSans-Bold ;
+    src: url(../fonts/OpenSans-Bold.ttf);
+}
+
+
+/*GLOBAL CSS */
+*{
+    margin: 0;
+    padding: 0;
+    /*? Không cộng dòn thuộc tính padding và margin */
+    box-sizing: border-box;
+}
+html, body {
+    /*! đơn vị REM phụ thuộc vào font-size, margin, padding đặt ở html */
+    font-size: 20px;
+    /*? Nếu không có font-size thì mặc định 1 rem = 16px */
+}
+
+
+/* HEADER */
+header {
+    /*! Để sử dụng linear buộc phải bg-image */
+    background-image: linear-gradient(to bottom right, red, green, blue, purple) ;
+    /*! chiều chéo, to botton right */
+    padding: 20px 0; /*? trên-dưới , trái-phải */
+}
+
+.header__content{
+    /*! kĩ thuật chia Web ở nhiều màn hình */
+    width: 70%; /* width < 100% */
+    /*! tự lấy phần còn lại (30%) chia đôi trái phải */
+    margin: auto;
+
+
+    /*? thẻ <nav> và thẻ <p> sẽ lên chung 1 hàng, bằng cách căn cứ vào thẻ cha gần nhất, ép các thẻ con vào chung 1 hàng */
+    display: flex;
+    /*! khoảng cách bằng nhau */
+    justify-content: space-evenly; /* space-between, vùng trắng trái phải = nhau, ở giữa gấp đôi */
+    
+    
+    /*! đưa vị trí ra giữa */
+    align-items: center;
+
+}
+
+.header__content ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.header__content a {
+    text-decoration: none;
+    color: white;
+    font-family: openSans-Bold;
+}
+
+.header__content li{
+    margin-right: 20px;
+
+}
+
+.header__content p{
+    /* font-size: 37px; */
+    font-size: 2.3125rem;
+    color: white;
+}
+
+/*! Responsive mobile */
+.header__menu__icon{
+    color: #ffffff;
+    font-size: 30px;
+    display: none;
+}
+
+/*! LINE */
+/*! ANIMATION */
+.line{
+    width: 0;
+    height: 2px;
+    background-color: #ff0fff;
+}
+
+/* .header__content li:hover .line{
+    width: 100%;
+} */
+
+/*? BF VÀ AFT BẮT BUỘC CÓ CONTENT */
+/*! Thẻ chưa Hover */
+.header__content li::after{
+    content: "";
+    /*! MẶC ĐỊNH AFTER VÀ BEFORE LÀ INLINE */
+    /*! ép thành block mới set đc width height */
+    width: 0;
+    display: block;
+    height: 2px;
+    background-color: red;
+    transition: all 0.5s linear 0s;
+    /* transition-property: width;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    transition-delay: 0s; */
+}
+/*! Thẻ đã Hover  */
+.header__content li:hover::after{
+    width: 100%;
+    
+}
+
+/*! ^^^^^^^^^^^^^ */
+/* CAROUSEL */
+
+.carousel {
+    background-image: url(../img/b3.jpg);
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    /*? justtify-content và align-items luôn đi theo display:flex */
+    /*! chỉ áp dụng nếu cha Flex có 1 thẻ con trực tiếp, thì giúp căn thẻ con ở giữa theo chiều dọc và ngang */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.carousel__content button{
+    padding: 13px 32px;
+    font-size: 14px;
+    color: white;
+    background-color: #ff0e83;
+    border: 1px solid white;
+    border-radius: 5px;
+    /*? Dấu bàn tay */
+    cursor: pointer;
+    /*? làm Delay Hover, không được để ở class :hover */
+    transition: all 0.5s;
+}
+.carousel__content button:hover{
+    color: black;
+    background-color: white;
+    /*? Đã gọi ở trên */
+    border-color: #ff0e83;
+
+}
+
+/* INTRO */
+
+.intro{
+    display: grid;
+    /*? Khai báo cần bao nhiêu cột, chỉ đi chung với dislay:grid */
+    /* grid-template-columns: 25% 25% 25% 25%; */
+    /* grid-template-columns: repeat(4, 25%); */
+    /* fr, chỉ dùng đối với grid */
+    grid-template-columns: repeat(4, 1fr); /*! 1fr = 1/số cột, là đơn vị */
+
+    /*! CÓ 4 CỘT VẼ RA 1|2|3|4|, (5) XÁC ĐỊNH ĐƯỜNG BẮT ĐẦU VÀ KẾT THÚC */
+/*!VÍ DỤ, LY KEM BẮT ĐẦU 2, KẾT THÚC 4 */
+}
+
+.intro__ab1{
+    /* grid-column: 2 / 4; */ /*? Bắt đầu đường số máy, và kết thúc */
+    /*? Đường bắt đầu / số lượng cột sẽ chiếm, áp dụng tương tư với hàng */
+    grid-column: 2 / span 2;
+
+}
+
+.intro img{
+    width: 100%;
+    display: block; /*Sửa lỗi trình duyệt tự quy định display */
+}
+
+.intro__best{
+    grid-column: 1 / span 2;
+}
+
+.intro__ab4{
+    grid-column: 3 / span 2;
+}
+
+.intro__item{
+    display: flex;
+    align-items: center;
+}
+
+.intro__text{
+    text-align: center;
+    padding: 0 50px;
+}
+
+/* NUMBERS */
+.number{
+    padding: 70px 0;
+}
+.number__content{
+    /*? Cha của item */
+    display: flex;
+
+    justify-content: space-evenly;
+    /* width: 70%; */
+    max-width: 1280px; /*! Kích thước max */
+    margin: auto;
+
+    text-align: center;
+}
+
+.number__item p:nth-of-type(1){
+    font-size: 32px;
+    color: #4e2a84;
+    font-weight: bolder;
+}
+
+.number__item p:nth-of-type(2){
+    font-size: 23px;
+    font-weight: bolder;
+}
+
+
+/* Video */
+
+
+.video__content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px; /* Giãn cách */
+    max-width: 1280px;
+    margin: auto;
+}
+/*? Lấy tất cả mọi thẻ trong video__item */
+.video__item *{
+    width: 100%;
+    height: 400px;
+}
+
+/*! Tất cả content đều phải max-width 1280 */
+
+
+/* TEAM */
+
+.team{
+    background-color: #4e2a84;
+    margin-top: 50px;
+    padding: 50px 0;
+}
+
+.team__content{
+    max-width: 1280px;
+    margin: auto;
+    
+}
+
+/*? lấy h1 là con trực tiếp team__content */
+.team__content > h1{
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+
+.team__list{
+    display: flex;
+    /*! nếu 1 dòng không đủ chỗ, thì rớt xuống hàng */
+    flex-wrap: wrap;
+}
+
+.team__item{
+    width: calc(100% / 3);
+    padding: 0 15px;
+    margin-bottom: 30px;
+    
+   
+}
+
+.team__item__content img{
+    width: 100%;
+
+    /*? Do default của nó là display :block-inline*/
+    display: block;
+        /*! Đổ bóng */
+        box-shadow: 0px 0px 5px #ffffff; /*?Độ nhòe blur */
+}
+.team__item__content{
+    /*! CHA */
+    position: relative ;
+    /*! Khi ra khỏi content sẽ biến mất*/
+    overflow: hidden;
+    box-shadow: 0 0 20px #ffffff;
+}
+
+.team__item__info{
+    color: white;
+    background-color: #ff0e83;
+    padding: 20px;
+
+    /*! CON */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/*! HOVER */
+.team__item__detail{
+    display: flex;
+    /*? Giá trị mặc định là row */
+    flex-direction: column;
+    /*? Trục phụ */
+    /* align-items: center; */
+
+    /*? Trục chính */
+    justify-content: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 0 20px;
+    
+    /**/
+    transition: all 0.5s linear;
+    
+}
+
+.team__item__social i{
+    border: 1px solid #ffffff;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    /*? Set line-height:  đúng bằng chiều cao; */
+    line-height: 40px;
+    /*todo Dùng padding chưa chắc ra hình vuông */
+    /* padding: 10px; */
+}
+
+/*todo Chưa rê chuột */
+.team__item__content--1 .team__item__detail{
+    /* kết hợp thì mới tắt ko hiện cursor đc */
+    opacity: 0;
+    visibility: hidden;
+}
+
+/*todo Rê chuột */
+.team__item__content--1:hover .team__item__detail {
+    /*? Trả về display của .team__item__detail */
+    opacity: 1;
+    visibility: visible;
+}
+
+.team__item__content--2 .team__item__detail{
+    left: -100%;
+    opacity: 0;
+    visibility: hidden;
+}
+.team__item__content--2:hover .team__item__detail{
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.team__item__content--3 .team__item__detail{
+    /*todo truyền dữ liệu x và y */
+    transform: translate(0, -100%);
+}
+.team__item__content--3:hover .team__item__detail{
+    transform: translate(0, 0);
+}
+
+.team__item__content--4 .team__item__detail{
+    /*todo hiệu ứng Scale */
+    transform: scale(0, 0);
+}
+.team__item__content--4:hover .team__item__detail{
+    /*? Kích thước ban đầu cảu Transform là (1, 1) */
+    transform: scale(1 ,1)
+}
+
+.team__item__content--5 .team__item__detail{
+    /*todo truyền dữ liệu x và y */
+    transform: scale(0, 0);
+}
+.team__item__content--5:hover .team__item__detail{
+    transform: scale(1, 1) rotate(360deg);
+    /*? 360 độ */
+}
+
+
+/*! ^^^^^^^^^^^^^^  */
+
+
+/* CONTACT */
+
+.contact{
+    margin-top: 30px;
+}
+
+.contact__form__content{
+    max-width: 1280px;
+    margin: auto;
+}
+
+.contact__form__content > h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.contact__form__content form{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact__form__control{
+    width: 100%;
+    padding: 0 15px;
+    margin-bottom: 20px;    
+}
+
+.contact__form__control--50{
+    width: 50%;
+}
+
+/*! Gọi nhiều selecter */
+/*! ngoặc [] gọi thẻ theo atrribute */
+.contact__form__control input[type=text],
+.contact__form__control input[type=email],
+.contact__form__control textarea{
+    padding: 10px;
+    width: 100%;
+}
+
+
+.contact__form__control input::placeholder{
+    font-style: italic;
+}
+
+
+/*? Befor và After */
+
+.carousel__content h1::before{
+    content: "The ";
+    color: #ff0fff;
+}
+
+.carousel__content h1::after{
+    content: " !";
+    color: #ffff00;
+}
+
+
+
+
+/*! AUTO ANIMATIONS */
+/*? Tên hiệu ứng */
+@keyframes bounces {
+    0%{
+        transform: translateY(-200px);
+        opacity: 0;        
+    }
+    60%{
+        transform: translateY(0);
+        opacity: 0.5;
+    }
+    80%{
+        transform: translateY(-50px);
+        opacity: 0.8;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.carousel__content h1{
+    /*? Tên hiệu ứng */
+    animation-name: bounces;
+    animation-duration: 1s;
+    /*? Kiểu chuyển động */
+    animation-timing-function: ease-in-out;
+
+    /*? Lặp hiệu ứng */
+    animation-iteration-count: infinite;
+
+    /*? Delay bao lâu mới vào hiệu ứng */
+    animation-delay: 0s;
+
+    /*! VIẾT RÚT GỌN */
+    animation: bounces 1s ease-in-out infinite;
+}
+
+/* .animate__heartBeat{
+    animation-iteration-count: infinite;
+} */
+
+/*todo khi responsive lớn nằm trên cùng */
+/*todo khi class giống nhau thì cut khỏi copy */
+
+@media screen and (max-width: 1200px) {
+    .video__content{
+        display: flex;
+    }
+
+    .video__item{
+        width: 50%;
+        padding: 5;
+    }
+}
+/*! Laptop cỡ nhỏ, tablet cỡ lớn */
+@media screen and (max-width: 996px) {
+    .header__content a {
+        text-decoration: none;
+        color: white;
+        font-family: openSans-Bold;
+        font-size: 16px;
+        padding: 2px;
+        margin-left: 20px;
+    }
+    .carousel{
+        height: 600px;
+    }
+    .intro{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .intro__ab1,
+    .intro__ab4,
+    .intro__best{
+        grid-column: initial;
+    }
+    .intro__best{
+        display: none;
+    }
+    .video__content{
+        display: block;
+     }
+     .team__item{
+        width: 50%;
+    }
+}
+
+
+
+
+/*! Responsive Tablet */
+@media screen and (max-width: 768px){
+    
+
+
+    
+
+    /*? Number từ 4 -> 2 */
+    .number__content{
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    .number__item{
+        width: 50%;
+    }
+    
+    
+}
+
+
+/*! Responsive Mobile */
+@media screen and (max-width: 576px) {
+    
+    
+
+    .carousel{
+        height: 400px;
+    }
+
+    .intro{
+        display: block;
+    }
+
+    
+
+    .video__content{
+        display: block;
+    }
+
+
+    /*? Đang xài flexbox cho team__list */
+    .team__list{
+        display: block;
+    }
+    /*? Đang là 33,33% */
+    .team__item{
+        width: 100%;
+    }
+
+    .contact__form__content form{
+        display: block;
+    }
+
+    .contact__form__control--50{
+        width: 100%;
+    }
+}
+

@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- animate -->
+
+    <!--    font awesome-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+      integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap 4-->
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Main Css-->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Studious</title>
+  </head>
+  <body>
+    <section class="header-info">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link text-white" href="#">Have any question ? </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">(+84)988581423</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">tantran1610@gmail.com</a>
+            </li>
+          </ul>
+          <div class="header-info-icon text-white ml-auto px-4">
+            <i class="fab fa-facebook-f pr-4"></i>
+            <i class="fab fa-twitter pr-4"></i>
+            <i class="fab fa-instagram pr-4"></i>
+            <i class="fab fa-linkedin-in"></i>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="logo">
+          <img src="./images/logo.png" alt="" />
+          <a class="navbar-brand" href="#">Studious</a>
+        </div>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto py-4">
+            <li class="nav-item px-1">
+              <a class="nav-link" href="#">HOME</a>
+            </li>
+            <li class="nav-item px-1">
+              <a class="nav-link" href="#">ABOUT US</a>
+            </li>
+            <li class="nav-item px-1">
+              <a class="nav-link" href="#">COURSES</a>
+            </li>
+            <li class="nav-item dropdown px-1">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                PAGES
+              </a>
+              <div
+                class="dropdown-menu text-uppercase"
+                aria-labelledby="navbarDropdown"
+              >
+                <a class="dropdown-item" href="#">Blog post</a>
+                <a class="dropdown-item" href="#">Blog single</a>
+                <a class="dropdown-item" href="#">404 Page</a>
+                <a class="dropdown-item" href="#">Email template</a>
+                <a class="dropdown-item" href="#">Landing page</a>
+                <a class="dropdown-item" href="#">Shortcodes</a>
+              </div>
+            </li>
+            <li class="nav-item px-1">
+              <a class="nav-link" href="#">CONTACT US</a>
+            </li>
+            <form class="form-inline my-2 my-lg-0 position-relative px-1">
+              <input
+                class="form-control mr-sm-2 fa-face"
+                type="search"
+                placeholder="Enter Keyword"
+                aria-label="Search"
+              />
+              <i class="fa fa-search"></i>
+              <i class="fa fa-moon"></i>
+            </form>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section class="slider">
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleCaptions"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              id="pic1"
+              src="./images/banner3.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h1>Master the Skills to Drive your Career</h1>
+              <button type="button" class="btn btn-danger">Know More</button>
+              <i class="fa fa-arrow-right"></i>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/banner2.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h1>Master the Skills to Drive your Career</h1>
+              <button>Know More</button>
+              <i class="fa fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slider__detail container">
+        <div class="slider__list">
+          <div class="slider__item">
+            <div class="square bg-primary">
+              <div class="slider__item__text">
+                <div><i class="fa fa-cogs text-white"></i></div>
+                <a href="#" class="text-white">Engineering & Architecture</a>
+              </div>
+            </div>
+          </div>
+          <div class="slider__item">
+            <div class="square bg-warning">
+              <div class="slider__item__text">
+                <div><i class="fa fa-book text-white"></i></div>
+                <a href="#" class="text-white">Learning Management</a>
+              </div>
+            </div>
+          </div>
+          <div class="slider__item">
+            <div class="square bg-danger">
+              <div class="slider__item__text">
+                <div><i class="fa fa-coffee text-white"></i></div>
+                <a href="#" class="text-white">Business & Management</a>
+              </div>
+            </div>
+          </div>
+          <div class="slider__item">
+            <div class="square bg-success">
+              <div class="slider__item__text">
+                <div><i class="fa fa-hourglass-half text-white"></i></div>
+                <a href="#" class="text-white">Artificial Intelligence</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="welcome">
+      <div class="welcome__content">
+        <h1 class="text-center">
+          Welcome to <span class="text-danger">Studious</span>
+        </h1>
+        <div class="welcome__list">
+          <div class="welcome__item">
+            <div><i class="fa fa-user-graduate text-primary"></i></div>
+            <a href="#">Trending Course</a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit sed do
+              eiusmod te incididunt
+            </p>
+          </div>
+
+          <div class="welcome__item">
+            <div>
+              <i class="fa fa-users text-primary"></i>
+            </div>
+            <a href="#">Certified Tearchers</a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit sed do
+              eiusmod te incididunt
+            </p>
+          </div>
+
+          <div class="welcome__item mb-5">
+            <div><i class="fa fa-book text-primary"></i></div>
+            <a href="#">Book and Library</a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit sed do
+              eiusmod te incididunt
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="courses">
+      <div class="courses__content">
+        <h1 class="text-center pt-5 pb-5">
+          Pick a Course to <span class="text-danger">Get Started</span>
+        </h1>
+        <div class="courses__list lead">
+          <div class="courses__item">
+            <div class="courses__item__bg">
+              
+              <div class="courses__item__tag">
+                <button type="button" class="btn btn-warning mr-2 text-white">
+                  <span>Art</span>
+                </button>
+                <button type="button" class="btn btn-success text-white">
+                  Design
+                </button>
+              </div>
+
+              <img src="./images/c1.jpg" />
+              <p class="courses__item__price bg-danger">
+                <span class="text-white">$400</span>
+              </p>
+              <p>
+                <span class="ml-3"
+                  ><i class="fa fa-signal mr-3 mt-5 mb-4 text-danger"></i
+                  >Intermediate</span
+                >
+                <span
+                  ><i class="fa fa-clock mr-2 text-danger"></i>10 weeks</span
+                >
+              </p>
+              <h5 class="ml-3"><a href="">Donec sed teus enime</a></h5>
+              <p class="lead ml-3">
+                Sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua.
+              </p>
+              <hr class="mt-5 mb-5" />
+              <div class="course__detail ml-3 ml-lg-0 pb-4">
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star text-warning mr-5"></i>
+                <a
+                  id="detail"
+                  href="#"
+                  class="ml-3 ml-lg-0 text-danger text-decoration-none"
+                  >Know Detail <i class="fa fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="courses__item">
+            <div class="courses__item__bg">
+              <div class="courses__item__tag">
+                <button type="button" class="btn btn-warning mr-2 text-white">
+                  <span>Digital</span>
+                </button>
+                <button type="button" class="btn btn-success text-white">
+                  Learn
+                </button>
+                <button type="button" class="btn btn-primary text-white">
+                  10% Off
+                </button>
+              </div>
+
+              <img src="./images/c2.jpg" />
+              <p class="courses__item__price bg-danger">
+                <span class="text-white">$900</span>
+              </p>
+              <p>
+                <span class="ml-3"
+                  ><i class="fa fa-signal mr-3 mt-5 mb-4 text-danger"></i
+                  >High</span
+                >
+                <span
+                  ><i class="fa fa-clock mr-2 text-danger"></i>10 weeks</span
+                >
+              </p>
+              <h5 class="ml-3"><a href="">It's enim ad minim ate</a></h5>
+              <p class="lead ml-3">
+                Sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua.
+              </p>
+              <hr class="mt-5 mb-5" />
+              <div class="course__detail ml-3 pb-4">
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star text-warning mr-5"></i>
+                <a
+                  id="detail"
+                  href="#"
+                  class="ml-3 text-danger text-decoration-none"
+                  >Know Detail <i class="fa fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="courses__item">
+            <div class="courses__item__bg">
+              <div class="courses__item__tag">
+                <button type="button" class="btn btn-warning mr-2 text-white">
+                  <span>HTML</span>
+                </button>
+                <button type="button" class="btn btn-success">Java</button>
+              </div>
+
+              <img src="./images/c3.jpg" />
+              <p class="courses__item__price bg-danger">
+                <span class="text-white">$99</span>
+              </p>
+              <p>
+                <span class="ml-3"
+                  ><i class="fa fa-signal mr-3 mt-5 mb-4 text-danger"></i
+                  >Begineer</span
+                >
+                <span
+                  ><i class="fa fa-clock mr-2 text-danger"></i>10 weeks</span
+                >
+              </p>
+              <h5 class="ml-3"><a href="">Ullamco laboris nisi uts</a></h5>
+              <p class="lead ml-3">
+                Sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua.
+              </p>
+              <hr class="mt-5 mb-5" />
+              <div class="course__detail ml-3 pb-4">
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star-half-alt text-warning mr-5"></i>
+                <a
+                  id="detail"
+                  href="#"
+                  class="ml-3 text-danger text-decoration-none"
+                  >Know Detail <i class="fa fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="courses__item">
+            <div class="courses__item__bg">
+              <div class="courses__item__tag">
+                <button type="button" class="btn btn-warning mr-2 text-white">
+                  <span>Website</span>
+                </button>
+                <button type="button" class="btn btn-success">Wordpress</button>
+              </div>
+
+              <img src="./images/c4.jpg" />
+              <p class="courses__item__price bg-danger">
+                <span class="text-white">$369</span>
+              </p>
+              <p>
+                <span class="ml-3"
+                  ><i class="fa fa-signal mr-3 mt-5 mb-4 text-danger"></i
+                  >Intermediate</span
+                >
+                <span
+                  ><i class="fa fa-clock mr-2 text-danger"></i>10 weeks</span
+                >
+              </p>
+              <h5 class="ml-3"><a href="">Donec sed teus enime</a></h5>
+              <p class="lead ml-3">
+                Sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua.
+              </p>
+              <hr class="mt-5 mb-5" />
+              <div class="course__detail ml-3 pb-4">
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star text-warning mr-5"></i>
+                <a
+                  id="detail"
+                  href="#"
+                  class="ml-3 text-danger text-decoration-none"
+                  >Know Detail <i class="fa fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="courses__item">
+            <div class="courses__item__bg">
+              <div class="courses__item__tag">
+                <button type="button" class="btn btn-warning mr-2 text-white">
+                  <span>Marketing</span>
+                </button>
+                <button type="button" class="btn btn-success">Edu</button>
+              </div>
+
+              <img src="./images/c5.jpg" />
+              <p class="courses__item__price bg-danger">
+                <span class="text-white">$499</span>
+              </p>
+              <p>
+                <span class="ml-3"
+                  ><i class="fa fa-signal mr-3 mt-5 mb-4 text-danger"></i
+                  >High</span
+                >
+                <span
+                  ><i class="fa fa-clock mr-2 text-danger"></i>10 weeks</span
+                >
+              </p>
+              <h5 class="ml-3"><a href="">It's enim ad minim ate</a></h5>
+              <p class="lead ml-3">
+                Sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua.
+              </p>
+              <hr class="mt-5 mb-5" />
+              <div class="course__detail ml-3 pb-4">
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star-half-alt text-warning mr-5"></i>
+                <a
+                  id="detail"
+                  href="#"
+                  class="ml-3 text-danger text-decoration-none"
+                  >Know Detail <i class="fa fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="courses__item">
+            <div class="courses__item__bg">
+              <div class="courses__item__tag">
+                <button type="button" class="btn btn-warning mr-2 text-white">
+                  <span>Study</span>
+                </button>
+                <button type="button" class="btn btn-success">Accadamic</button>
+              </div>
+
+              <img src="./images/c6.jpg" />
+              <p class="courses__item__price bg-danger">
+                <span class="text-white">$289</span>
+              </p>
+              <p>
+                <span class="ml-3"
+                  ><i class="fa fa-signal mr-3 mt-5 mb-4 text-danger"></i
+                  >Begineer</span
+                >
+                <span
+                  ><i class="fa fa-clock mr-2 text-danger"></i>10 weeks</span
+                >
+              </p>
+              <h5 class="ml-3"><a href="">Ullamco laboris nisi uts</a></h5>
+              <p class="lead ml-3">
+                Sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua.
+              </p>
+              <hr class="mt-5 mb-5" />
+              <div class="course__detail ml-3 pb-4">
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star text-warning"></i>
+                <i class="fa fa-star text-warning mr-5"></i>
+                <a
+                  id="detail"
+                  href="#"
+                  class="ml-3 text-danger text-decoration-none"
+                  >Know Detail <i class="fa fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center button-browse">
+          <button type="button" class="btn btn-danger p-2 pl-4 pr-4 pt-3 pb-3">
+            Browse more courses<i class="fa fa-arrow-right ml-2"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="introduce pb-5">
+      <div id="introduce__pic"></div>
+      <div class="introduce__content container position-absolute">
+        <div class="introduce__list">
+          <div class="introduce__item">
+            <div class="introduce__item__bg">
+              <div class="introduce__item__detail">
+                <div class="introduce__item__icon">
+                  <i class="fa fa-american-sign-language-interpreting"></i>
+                </div>
+                <div class="introduce__item__text">
+                  <h3>Flexible Classes</h3>
+                  <p>Lorem ipsum dolor sit amet, dolor elit.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="introduce__item">
+            <div class="introduce__item__bg">
+              <div class="introduce__item__detail">
+                <div class="introduce__item__icon">
+                  <i class="fa fa-download"></i>
+                </div>
+                <div class="introduce__item__text">
+                  <h3>Offline Mode</h3>
+                  <p>Lorem ipsum dolor sit amet, dolor elit.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="introduce__item">
+            <div class="introduce__item__bg">
+              <div class="introduce__item__detail">
+                <div class="introduce__item__icon">
+                  <i class="fa fa-headphones"></i>
+                </div>
+                <div class="introduce__item__text">
+                  <h3>Educator Help</h3>
+                  <p>Lorem ipsum dolor sit amet, dolor elit.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="introduce__item">
+            <div class="introduce__item__bg">
+              <div class="introduce__item__detail">
+                <div class="introduce__item__icon">
+                  <i class="fa fa-play-circle"></i>
+                </div>
+                <div class="introduce__item__text">
+                  <h3>Online Classes</h3>
+                  <p>Lorem ipsum dolor sit amet, dolor elit.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="number mb-5">
+      <div class="number__content container">
+        <h1 class="text-center mt-5 mb-5">
+          Streng in <span class="text-danger">Number</span>
+        </h1>
+        <p class="text-center">
+          Similique sunt in culpa qui officia deserunt mollitia animi, id est
+          laborum et dolorum fuga.
+        </p>
+        <div class="number__list text-center">
+          <div class="number__item">
+            <div class="counter wow animate__animated animate__rubberBand">
+              <span>6,300</span>
+            </div>
+
+            <p>LEARNERS & COUNTING</p>
+            <div class="verticalLine"></div>
+          </div>
+
+          <div class="number__item">
+            <div class="counter wow animate__animated animate__rubberBand">
+              <span>638</span>
+            </div>
+            <p>TOTAL COURSES</p>
+            <div class="verticalLine"></div>
+          </div>
+
+          <div class="number__item">
+            <div class="counter wow animate__animated animate__rubberBand">
+              <span>7,600</span>
+            </div>
+            <p>SUCCESSFUL STUDENTS</p>
+            <div class="verticalLine"></div>
+          </div>
+
+          <div class="number__item">
+            <div class="counter wow animate__animated animate__rubberBand">
+              <span>36</span>
+            </div>
+            <p>LANGUAGES</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="feedback">
+      <div class="feedback__content container">
+        <h1 class="text-center">
+          Student Community <span class="text-danger">Feedback</span>
+        </h1>
+        <div class="feedback__list">
+          <div class="feedback__item">
+            <div class="feedback__item__bg pl-4 pr-3">
+              <p class="lead">
+                <i class="fa fa-quote-left"></i>Nam libero tempore, cum soluta
+                nobis est eligendi optio cumque nihil impedit.
+              </p>
+              <div class="feedback__item__detail position-relative">
+                <img src="./images/testi2.jpg" alt="" />
+                <h2>Molive Joe</h2>
+                <p>Caption Here</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="feedback__item">
+            <div class="feedback__item__bg pl-4 pr-3">
+              <p class="lead">
+                <i class="fa fa-quote-left"></i>Nam libero tempore, cum soluta
+                nobis est eligendi optio cumque nihil impedit.
+              </p>
+              <div class="feedback__item__detail position-relative">
+                <img src="./images/testi1.jpg" alt="" />
+                <h2>Petey Cruis</h2>
+                <p>Caption Here</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="feedback__item">
+            <div class="feedback__item__bg pl-4 pr-3">
+              <p class="lead">
+                <i class="fa fa-quote-left"></i>Nam libero tempore, cum soluta
+                nobis est eligendi optio cumque nihil impedit.
+              </p>
+              <div class="feedback__item__detail position-relative">
+                <img src="./images/testi3.jpg" alt="" />
+                <h2>Paige Turner</h2>
+                <p>Caption Here</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="instructor">
+          <div class="instructor__content container">
+              <div class="instructor__list">
+                  <div class="instructor__bg position-relative">                    
+                    <div class="instructor__item ">
+                        
+                        <div class="instructor__item__text">
+                            <h1>Olive Yew</h1>
+                            <span>Teachers Design</span>
+                            
+                        </div>
+                        <div class="image position-relative">
+                            <img src="./images/team1.jpg" alt="">
+                            <div class="instructor_social text-center text-white">
+                                <i class=" animate__animated animate__wobble fab fa-facebook-f pr-4 "></i>
+                                <i class="animate__animated animate__wobble fab fa-twitter pr-4"></i>
+                                <i class="animate__animated animate__wobble fab fa-instagram pr-4"></i>
+                                <i class="animate__animated animate__wobble fab fa-linkedin-in"></i>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                  </div>
+                  
+
+                  <div class="instructor__bg d-flex position-relative">
+                      
+                    <div class="instructor__item ">
+                        
+                        <div class="instructor__item__text">
+                            <h1>Aida Joe</h1>
+                            <span>UI/UX Designer</span>
+                            
+                        </div>
+                        <div class="image position-relative">
+                            <img src="./images/team2.jpg" alt="">
+                            <div class="instructor_social text-center text-white">
+                                <i class=" animate__animated animate__wobble fab fa-facebook-f pr-4 "></i>
+                                <i class="animate__animated animate__wobble fab fa-twitter pr-4"></i>
+                                <i class="animate__animated animate__wobble fab fa-instagram pr-4"></i>
+                                <i class="animate__animated animate__wobble fab fa-linkedin-in"></i>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                  </div>
+                  <div class="instructor__bg d-flex position-relative">
+                      
+                    <div class="instructor__item ">
+                        
+                        <div class="instructor__item__text">
+                            <h1>Teri Dac</h1>
+                            <span>Teaches Skills</span>
+                            
+                        </div>
+                        <div class="image position-relative">
+                            <img src="./images/team3.jpg" alt="">
+                            <div class="instructor_social text-center text-white">
+                                <i class=" animate__animated animate__wobble fab fa-facebook-f pr-4 "></i>
+                                <i class="animate__animated animate__wobble fab fa-twitter pr-4"></i>
+                                <i class="animate__animated animate__wobble fab fa-instagram pr-4"></i>
+                                <i class="animate__animated animate__wobble fab fa-linkedin-in"></i>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                  </div>
+                  <div class="instructor__bg d-flex position-relative">
+                      
+                    <div class="instructor__item ">
+                        
+                        <div class="instructor__item__text">
+                            <h1>Anton Bne</h1>
+                            <span>Web Designer</span>
+                            
+                        </div>
+                        <div class="image position-relative">
+                            <img src="./images/team4.jpg" alt="">
+                            <div class="instructor_social text-center text-white">
+                                <i class=" animate__animated animate__wobble fab fa-facebook-f pr-4 "></i>
+                                <i class="animate__animated animate__wobble fab fa-twitter pr-4"></i>
+                                <i class="animate__animated animate__wobble fab fa-instagram pr-4"></i>
+                                <i class="animate__animated animate__wobble fab fa-linkedin-in"></i>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="contact">
+        <div class="contact__content container">
+          <div class="contact__list">
+            <div class="contact__item mr-5">
+              <img src="./images/image.png" alt="" />
+            </div>
+
+            <div class="contact__item ml-xl-5 lead">
+              <h1>Not Sure Where to Begin? Contact Now, We will Help you</h1>
+              <p>
+                Consectetur adipiscing elit. Aliquam sit amet efficitur
+                tortor.Uspendisse efficitur orci urna. In et augue ornare,
+                tempor massa in, luctus sapien.
+              </p>
+              <button type="button" class="btn btn-danger">Contact Us</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+        <div class="bg-light p-5 text-center text-lg-start">
+            <!-- Grid container -->
+            <div class="container p-4">
+              <!--Grid row-->
+              <div class="row">
+                <!--Grid column-->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                  <h5 class="text-uppercase">QUICK LINKS</h5>
+          
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a href="#!" class="text-dark">Home</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-dark">About</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-dark">Courses</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-dark">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+                <!--Grid column-->
+          
+                <!--Grid column-->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                  <h5 class="text-uppercase mb-0">HELP & SUPPORT</h5>
+          
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#!" class="text-dark">Live Chart</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-dark">Faq</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-dark">Support</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-dark">Term of Services</a>
+                    </li>
+                  </ul>
+                </div>
+                <!--Grid column-->
+          
+                <!--Grid column-->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                  <h5 class="text-uppercase">CONTACT</h5>
+          
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a href="#!" class="text-dark">tantran1610@gmail.com</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-dark">(+84)9885814023</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-dark">HoChiMinh city</a>
+                    </li>
+                  </ul>
+                </div>
+                <!--Grid column-->
+          
+                <!--Grid column-->
+                <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+                  <h5>ABOUT</h5>
+                  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab.</p>
+                  <div> <!-- Facebook -->
+                    <a
+                      class="btn btn-primary btn-floating m-1"
+                      style="background-color: #3b5998;"
+                      href="#!"
+                      role="button"
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+              
+                    <!-- Twitter -->
+                    <a
+                      class="btn btn-primary btn-floating m-1"
+                      style="background-color: #55acee;"
+                      href="#!"
+                      role="button"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+              
+                    <!-- Google -->
+                    <a
+                      class="btn btn-primary btn-floating m-1"
+                      style="background-color: #dd4b39;"
+                      href="#!"
+                      role="button"
+                      ><i class="fab fa-google"></i
+                    ></a>
+              
+                    <!-- Instagram -->
+                    <a
+                      class="btn btn-primary btn-floating m-1"
+                      style="background-color: #ac2bac;"
+                      href="#!"
+                      role="button"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+              
+                    <!-- Linkedin -->
+                    <a
+                      class="btn btn-primary btn-floating m-1"
+                      style="background-color: #0082ca;"
+                      href="#!"
+                      role="button"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                    <!-- Github -->
+                    <a
+                      class="btn btn-primary btn-floating m-1"
+                      style="background-color: #333333;"
+                      href="#!"
+                      role="button"
+                      ><i class="fab fa-github"></i
+                    ></a></div>
+                </div>
+                <!--Grid column-->
+              </div>
+              <!--Grid row-->
+            </div>
+            <!-- Grid container -->
+          
+            <!-- Copyright -->
+            <!-- Copyright -->
+          </div>
+          <div class="text-center text-white p-3 bg-dark">
+            © 2020 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">Trần Đức Tân</a>
+          </div>
+    </footer>
+
+    <!--JS Bootstrap-->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+      integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/jquery.countup.min.js"></script>
+    <script>
+      $(".counter").countUp({
+        time: 2000,
+        delay: 10,
+      });
+    </script>
+    <!-- WOW JS -->
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </body>
+</html>

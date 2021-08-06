@@ -1,0 +1,7 @@
+//! đây là function map-get để làm cho ngắn gọn
+@function c($key) {
+     @if map-has-key($map: $colors, $key: $key) {
+       @return map-get($map: $colors, $key: $key);
+     }
+     @error "Invalid color : #{$key}";
+   }

@@ -1,0 +1,309 @@
+@import "../helpers/variables";
+@import "../helpers/function";
+@import "../base/reset";
+@import "../components/footer";
+@import "../components/header";
+
+html, body{
+     overflow-x: hidden;
+}
+.carousel{
+     .container{
+          .list{
+               display: flex;
+               .item{
+                    width: 50%;
+               }
+               .item-left{
+                   transform: translateY(35%);
+                   h5{
+                        color: c("c1");
+                        font-weight: $font-semibold;
+                   }
+                   h1{
+                        font-weight: $font-bold;
+                        font-size: $text-2xl;
+                   }
+               }
+               
+          }
+     }
+     @media screen and (max-width: 1200px) {
+          transform: translate(-$sp-16, $sp-4);
+          .container{
+               .list{
+                    .item-left{
+                         transform: translateY($sp-32);
+                    }
+               }
+          }
+     }
+     @media screen and (max-width: 992px) {
+          .container{
+               .list{
+                    display: block;
+                    .item{
+                         width: 100%;
+                    }
+                    .item-left{
+                         text-align: center;
+                         margin-bottom: $sp-20;
+                         transform: translate($sp-16, $sp-12);
+                    }
+                    .item-right{
+                         transform: translate($sp-24, $sp-12);
+                    }
+                    
+               }
+          }
+     }
+     @media screen and (max-width: 768px) {
+          .container{
+               .list{
+                    .item-left{
+                         transform: translate($sp-16, $sp-8);
+                    }
+                    
+               }
+          }
+     }
+     @media screen and (max-width: 577px) {
+          .container{
+               .list{
+                    .item-left{
+                         transform: translate($sp-16, $sp-12);
+                    }
+                    .item-right{
+                         transform: translate($sp-8, 0);
+                    }
+               }
+          }
+     }
+}
+
+.team{
+     // background-image: url(../../images/Violet_top_left_wave.png);
+     // background-repeat: no-repeat;
+     // height: 100%;
+     // width: 100%;
+     position: relative;
+     
+     .teamimage{
+          img{
+               position: absolute;
+               top: 0;
+               left: 0;
+               width: 100%;
+               height: 500px;
+               background-repeat: no-repeat;
+          }
+     }
+     .container{
+          .list{
+               display: flex;
+               flex-wrap: wrap;
+               .item{
+                    width: calc(100%/4);
+                    padding: $sp-4;
+                    position: relative;
+                    animation: backInLeft 1s linear 0s both;
+                    transform: translateX(-100%);
+                    opacity: 0;
+                    img{
+                         width: 100%;
+                         box-shadow: 3px 0px 20px c("c3-100");
+                    }
+                    .detail{
+                         background-color: c("c2");
+                         text-align: center;
+                         padding: $sp-1;
+                         h5{
+                              color: c("c1");
+                              font-size: $text-sm;
+                              font-weight: $font-semibold;
+                         }
+                         p{
+                              font-size: $text-sm;
+                         }
+                         h4{
+                              font-weight: $font-bold;
+                         }
+                    }
+               }
+               @for $i from 1 to 8{
+                    .item-#{$i}{
+                         animation-delay: $i * 0.2s;
+                    }
+               }
+          }
+     }
+
+
+     @media screen and (max-width: 1200px){
+          .container{
+               .list{
+                    display: flex;
+                    .item{
+                         width: 50%;
+                         .detail{
+                              p{
+                                   font-size: $text-md;
+                              }
+                         }
+                    }
+               }
+          }
+     }
+     @media screen and (max-width: 992px){
+          .container{
+               .list{
+                    display: block;
+                    .item{
+                         width: 100%;
+                         .detail{
+                              p{
+                                   font-size: $text-md;
+                              }
+                         }
+                    }
+               }
+          }
+     }
+     @media screen and (max-width: 768px){
+          
+     }
+     @media screen and (max-width: 577px){
+          
+     }
+}
+
+.course{
+     background-image: url(../../images/Wave_White_bottom_right_shape_01.png);
+     width: 100%;
+     height: 500px;
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     margin-bottom: -460px;
+     .courseimage{
+          background-image: url(../../images/accent_bottom_wave_01.png);
+          background-size: cover;
+          height: 500px;
+          width: 100%;
+          position: absolute;
+          top: 140px;
+          left: 0;
+     }
+     .container{
+          .list{
+               .contact1{
+                    form{
+                         z-index: 10;
+                         position: relative;
+                    }
+                    .item{
+                         animation: bounceInUp 5s linear both;
+                         transform: translateX(-100%);
+                    }
+               
+               }
+          }
+     }
+     @media screen and (max-width: 1200px){
+          .list{
+               .contact1{
+                    .item-1{
+                         img{
+                              width: 100%;
+                         }
+                    }
+                    .item-2{
+                         form{
+                              transform: translate($sp-10, 0);
+                              width: 100%;
+                         }
+                    }
+               }
+          }
+     }
+     @media screen and (max-width: 992px){
+     }
+     @media screen and (max-width: 768px){
+          .container{
+               .list{
+                    .contact1{
+                         .item-2{
+                              form{
+                                   transform: translate($sp-10, 0);
+                              }
+                         }
+                    }
+               }
+          }
+     }
+     @media screen and (max-width: 577px){
+          .container{
+               .list{
+                    .contact1{
+                         .item-2{
+                              form{
+                                   transform: translate($sp-24, 0);
+                              }
+                         }
+                    }
+               }
+          }
+     }
+}
+
+.footer{
+     margin-top: 600px;
+     position: relative;
+     z-index: 10;
+     background-color: c("c1-200");
+     .container{
+          .row{
+               .content{
+                    a, p{
+                         font-size: $text-base;
+                         font-weight: $font-bold;
+                         color: c("c2") !important;
+                    }
+                    button{
+                         &:hover{
+                              background-color: c("c1");
+                              color: c("c2");
+                         }
+                    }
+               }
+          }
+          
+     }
+}
+
+.footer__content{
+     background-color: c("c1-200");
+     .container{
+          .copyright{
+               p{
+                    font-size: $text-md;
+                    font-weight: $font-bold;
+               }
+          }
+          .social{
+               text-align: center;
+          }
+     }
+}
+
+
+
+@keyframes fadeInLeft {
+     0%{
+
+     }
+     100%{
+          transform: translateX(0);
+          opacity: 1;
+     }
+}

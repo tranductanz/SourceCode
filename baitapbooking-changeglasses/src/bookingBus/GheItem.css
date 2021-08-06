@@ -1,0 +1,10 @@
+.p-4{
+    /* background: green !important; */
+    padding: 0.5rem !important;
+}
+.isBooked{ 
+    cursor: not-allowed;
+    pointer-events: none;
+    background-color: red !important;
+    font-weight: bolder;
+}

@@ -1,0 +1,16 @@
+//! nơi chứa mixin
+
+@mixin Button($border, $radius, $padding, $bg, $c, $shadow, $hover-bg, $hover-c) {
+     border: $border;
+     border-radius: $radius;
+     padding: $padding;
+     background-color: $bg;
+     color: $c;
+     box-shadow: $shadow;
+     cursor: pointer;
+     //! đại diện cho parent selector
+     &:hover{
+       background: $hover-bg;
+       color: $c,
+     };
+   }

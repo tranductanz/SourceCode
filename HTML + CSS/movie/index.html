@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FONT AWESOME -->
+    <!--! "fa5$css"để lấy cdn css-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <!-- CSS Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+    />
+    <!-- Main css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Movie</title>
+  </head>
+  <body>
+    <!--? Màu Background -->
+    <header class="header">
+      <!-- Có sẵn margin và max-width -->
+      <div class="container">
+        <!-- Test-->
+        <!--? nội dung nằm bên phải TEXT-RIGHT -->
+        <p class="text-right text-white mb-0">
+          <!--? Màu chữ -->
+          <!--? Margin-right (mr 1-5) -->
+          <i class="fa fa-phone mr-2"></i>
+          <!--? Padding-right (pr 1-5) -->
+          <span class="border-right pr-3">09885814232</span>
+          <!--? Margin-left (ml 1-5) -->
+          <i class="fa fa-search ml-2"></i>
+        </p>
+
+        <!--todo NAVBAR -->
+        <!--? pt = Padding top -->
+        <nav class="navbar navbar-expand-lg navbar-dark pt-0">
+          <a class="navbar-brand p-0" href="#">
+            <img src="./img/logo.svg" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <!--? Margin-left auto sẽ tự đẩy sang phải -->
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <!--? padding -x 3 ( khoảng cách) -->
+                <a class="nav-link text-white px-3" href="#">HOME</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-white px-3" href="#">WHAT'S ON</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-white px-3" href="#">SHORTCODE</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-white px-3" href="#">NEWS</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-white px-3" href="#">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!--todo END NAVBAR -->
+      </div>
+    </header>
+    <section class="slider">
+      <!--? Carousel-fade để đổi hiệu ứng slider -->
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide carousel-fade"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators container">
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="owl-carousel owl-theme">
+          <div class="item active">
+            <img src="./img/hero-1.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption container d-none d-md-block text-left">
+              <!--? Lead làm chữ đẹp hơn xíu -->
+              <p class="text-warning lead">ACTION, ADVENTURE, FANTASY</p>
+              <h1 class="display-4">End of the World: Part I</h1>
+              <p>
+                Claritas est etiam processus dynamicus, qui sequitur mutationem
+                consuetudium lectorum. Mirum est notare quam littera gothica,
+                quam nunc putamus parum.
+              </p>
+              <div>
+                <!--? span là thẻ inline -->
+                <span class="border d-inline-block rounded-circle text-center">
+                  PG
+                </span>
+                <button>
+                  <i class="fa fa-play"></i>
+                  PLAY TRAILER
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--todo Phủ lớp mờ -->
+          <!--? <div class="overlay"></div> -->
+
+          <div class="item">
+            <img src="./img/hero-2.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption container d-none d-md-block text-left">
+              <!--? Lead làm chữ đẹp hơn xíu -->
+              <p class="text-warning lead">ACTION, ADVENTURE, FANTASY</p>
+
+              <h1 class="display-4">End of the World: Part II</h1>
+              <p>
+                Claritas est etiam processus dynamicus, qui sequitur mutationem
+                consuetudium lectorum. Mirum est notare quam littera gothica,
+                quam nunc putamus parum.
+              </p>
+              <div>
+                <!--? span là thẻ inline -->
+                <span class="border d-inline-block rounded-circle text-center">
+                  PG
+                </span>
+                <button>
+                  <i class="fa fa-play"></i>
+                  PLAY TRAILER
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="./img/hero-3.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption container d-none d-md-block text-left">
+              <!--? Lead làm chữ đẹp hơn xíu -->
+              <p class="text-warning lead">ACTION, ADVENTURE, FANTASY</p>
+              <h1 class="display-4">End of the World: Part III</h1>
+              <p>
+                Claritas est etiam processus dynamicus, qui sequitur mutationem
+                consuetudium lectorum. Mirum est notare quam littera gothica,
+                quam nunc putamus parum.
+              </p>
+              <div>
+                <!--? span là thẻ inline -->
+                <span class="border d-inline-block rounded-circle text-center">
+                  PG
+                </span>
+                <button>
+                  <i class="fa fa-play"></i>
+                  PLAY TRAILER
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+    <section class="movie">
+      <div class="container">
+        <h1>NEW IN</h1>
+        <!--todo Set sẵn display flex -->
+        <!--! 1 row sẽ là 12 -->
+        <!--! col-sm-6 (576px)  : có nghĩa là nếu sm thì sẽ chia 12/6 -->
+        <!--! col-md-4 (768px) -->
+        <!--! col-lg- (992px) -->
+        <!--! col-xl(1200px) -->
+        <div class="row">
+          <div class="col-3 col-sm-6 col-md-4 col-lg-3 col-xl-1">
+            <div class="movie__item">
+              <!--? rounded-lg là border-radius -->
+              <div
+                class="movie__item__poster overflow-hidden text-center rounded-lg position-relative"
+              >
+                <img src="./img/movie-1.jpg" class="d-block w-100" />
+                <div
+                  class="movie__item__poster__content position-absolute text-white w-75"
+                >
+                  <i class="fa fa-play border rounded-circle text-center"></i>
+                  <a href="#" class="d-block text-white my-3">READ MORE</a>
+                  <p>Release: 7 Mar, 2021</p>
+                </div>
+              </div>
+              <h1>Venture</h1>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="movie__item">
+              <!--? rounded-lg là border-radius -->
+              <div
+                class="movie__item__poster overflow-hidden text-center rounded-lg position-relative"
+              >
+                <img src="./img/movie-2.jpg" class="d-block w-100" />
+                <div
+                  class="movie__item__poster__content position-absolute text-white w-75"
+                >
+                  <i class="fa fa-play border rounded-circle text-center"></i>
+                  <a href="#" class="d-block text-white my-3">READ MORE</a>
+                  <p>Release: 7 Mar, 2021</p>
+                </div>
+              </div>
+              <h1>Venture</h1>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="movie__item">
+              <!--? rounded-lg là border-radius -->
+              <div
+                class="movie__item__poster overflow-hidden text-center rounded-lg position-relative"
+              >
+                <img src="./img/movie-3.jpg" class="d-block w-100" />
+                <div
+                  class="movie__item__poster__content position-absolute text-white w-75"
+                >
+                  <i class="fa fa-play border rounded-circle text-center"></i>
+                  <a href="#" class="d-block text-white my-3">READ MORE</a>
+                  <p>Release: 7 Mar, 2021</p>
+                </div>
+              </div>
+              <h1>Venture</h1>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="movie__item">
+              <!--? rounded-lg là border-radius -->
+              <div
+                class="movie__item__poster overflow-hidden text-center rounded-lg position-relative"
+              >
+                <img src="./img/movie-4.jpg" class="d-block w-100" />
+                <div
+                  class="movie__item__poster__content position-absolute text-white w-75"
+                >
+                  <i class="fa fa-play border rounded-circle text-center"></i>
+                  <a href="#" class="d-block text-white my-3">READ MORE</a>
+                  <p>Release: 7 Mar, 2021</p>
+                </div>
+              </div>
+              <h1>Venture</h1>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--! NAVS TAB -->
+    <section class="schedule">
+      <div class="container">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active" data-toggle="tab" href="#mon" role="tab"
+              >MON</a
+            >
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" data-toggle="tab" href="#tue" role="tab">TUE</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" data-toggle="tab" href="#wed" role="tab">WED</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" data-toggle="tab" href="#thu" role="tab">THU</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" data-toggle="tab" href="#fri" role="tab">FRI</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" data-toggle="tab" href="#sat" role="tab">SAT</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" data-toggle="tab" href="#sun" role="tab">SUN</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="mon" role="tabpanel">
+            MONDAY
+          </div>
+          <div class="tab-pane fade" id="tue" role="tabpanel">TUESDAY</div>
+          <div class="tab-pane fade" id="wed" role="tabpanel">WEDNESDAY</div>
+          <div class="tab-pane fade" id="thu" role="tabpanel">THURSDAY</div>
+          <div class="tab-pane fade" id="fri" role="tabpanel">FRIDAY</div>
+          <div class="tab-pane fade" id="sat" role="tabpanel">SATURDAY</div>
+          <div class="tab-pane fade" id="sun" role="tabpanel">SUNDAY</div>
+        </div>
+      </div>
+    </section>
+    <section class="coming"></section>
+    <section class="contact"></section>
+    <footer class="footer"></footer>
+
+    
+    <!-- CDN Javascript -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 10,
+          nav: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 3,
+            },
+            1000: {
+              items: 5,
+            },
+          },
+        });
+      </script>
+
+  </body>
+</html>
